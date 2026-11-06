@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for the QA canvas Chrome extension.">
+<title>QA canvas privacy policy</title>
+<style>
+  /* Layout: one readable column, a short "in short" panel up top, plain sections below. */
+  :root {
+    --bg: #fbfbfe;
+    --surface: #f1f0fb;
+    --fg: #1d1b33;
+    --muted: #5d5a7a;
+    --line: #dcdaf0;
+    --accent: #4f46e5;
+    --display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    --body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #12111c; --surface: #1c1a2b; --fg: #ecebf7; --muted: #a6a3c2; --line: #2e2b45; --accent: #a5a1ff; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #12111c; --surface: #1c1a2b; --fg: #ecebf7; --muted: #a6a3c2; --line: #2e2b45; --accent: #a5a1ff; color-scheme: dark; }
+
+  body { background: var(--bg); color: var(--fg); font: 400 16px/1.65 var(--body); }
+  .page { max-width: 680px; margin: 0 auto; padding-block: 56px 80px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 40px; }
+  header { display: flex; flex-direction: column; gap: 10px; }
+  .mark { display: flex; align-items: center; gap: 10px; font: 600 14px var(--body); color: var(--muted); }
+  .mark svg { width: 28px; height: 28px; flex: none; }
+  h1 { margin: 0; font: 700 clamp(30px, 6vw, 42px)/1.1 var(--display); letter-spacing: -0.01em; text-wrap: balance; }
+  .date { margin: 0; color: var(--muted); font-size: 14px; }
+  .short { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; }
+  .short h2 { margin: 0; font: 600 13px var(--body); letter-spacing: .02em; color: var(--accent); }
+  .short ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  section { display: flex; flex-direction: column; gap: 10px; }
+  h2 { margin: 0; font: 600 22px/1.25 var(--display); text-wrap: balance; }
+  p, li { margin: 0; max-width: 65ch; }
+  ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+  b { font-weight: 600; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; color: var(--muted); font-size: 13px; background: var(--surface); }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { white-space: nowrap; font-weight: 600; }
+  .contact { color: var(--muted); }
+  footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 20px; }
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+
+<main class="page">
+  <header>
+    <div class="mark">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#5b45e0"/><path d="M8.5 12V9.5a1 1 0 0 1 1-1H12M20 8.5h2.5a1 1 0 0 1 1 1V12M23.5 20v2.5a1 1 0 0 1-1 1H20M12 23.5H9.5a1 1 0 0 1-1-1V20" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><path d="M12 16.2l2.8 2.8 5.4-5.6" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      QA canvas · Chrome extension
+    </div>
+    <h1>Privacy policy</h1>
+    <p class="date">Effective 6 November 2026</p>
+  </header>
+
+  <div class="short" aria-label="In short">
+    <h2>In short</h2>
+    <ul>
+      <li>QA canvas has no servers, no accounts and no analytics. We never receive your data.</li>
+      <li>Everything you capture stays in your browser until you send it.</li>
+      <li>When you send something, it goes straight from your browser to the issue tracker you connected: ClickUp, Jira or Linear. Nowhere else.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>What QA canvas handles</h2>
+    <ul>
+      <li><b>Captures you make:</b> screenshots, tab recordings, written notes, and any image or video you add from your device.</li>
+      <li><b>Page details, only when you capture:</b> the page’s address and title, your browser and operating system, window and screen size, time zone, browser language and the time. You choose which of these are added to an issue.</li>
+      <li><b>Your voice, only if you turn the microphone on:</b> it’s recorded as part of a tab recording and nothing else.</li>
+      <li><b>Your tracker API key:</b> the ClickUp token, Jira email and API token, or Linear API key you enter, plus the link to the task or board you send to.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Where it’s kept</h2>
+    <p>All of it is stored locally in your browser, in the extension’s own storage on your device. It is not synced to any server. Captures stay until you delete them. Your API keys stay until you disconnect the tracker or remove the extension.</p>
+  </section>
+
+  <section>
+    <h2>When it leaves your browser</h2>
+    <p>Only when you choose to send a capture (Add, Send or Send all). QA canvas then creates the task or issue, with your note, the details you chose and the attachment, directly in the tracker you connected, using your API key:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Tracker</th><th>Where the data goes</th></tr></thead>
+        <tbody>
+          <tr><td>ClickUp</td><td>api.clickup.com</td></tr>
+          <tr><td>Jira</td><td>your Jira Cloud site (yourteam.atlassian.net)</td></tr>
+          <tr><td>Linear</td><td>api.linear.app, and Linear’s file storage for screenshots and recordings</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Once there, it’s handled under that company’s own privacy policy and your workspace’s settings.</p>
+  </section>
+
+  <section>
+    <h2>What QA canvas never does</h2>
+    <ul>
+      <li>Send your data to us or to anyone other than the tracker you chose.</li>
+      <li>Sell, rent or share your data, or use it for advertising.</li>
+      <li>Track your browsing. It only looks at a page when you capture it.</li>
+      <li>Load code from the internet. Everything it runs ships inside the extension.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Deleting your data</h2>
+    <ul>
+      <li>Delete a capture with its Delete button, or everything with Settings → Delete all.</li>
+      <li>Remove a tracker’s key with Set up → Disconnect.</li>
+      <li>Removing the extension from Chrome deletes everything it stored.</li>
+      <li>Issues you already sent live in your tracker. Delete them there.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, the new version will be posted here with a new effective date.</p>
+    <p class="contact">Questions about this policy or your data: <b>sulakshanasurya@gmail.com</b></p>
+  </section>
+
+  <footer>QA canvas is a tool for checking the design and quality of web pages. It isn’t made for or directed at children.</footer>
+</main>
+
+</body>
+</html>
